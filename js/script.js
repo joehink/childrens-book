@@ -25,7 +25,10 @@ rightArrow.on("click", function() {
 
 // On last page
 $("#flipbook").bind("last", function(event) {
-	$("#flipbook").on("click", resetBook)
+    $("#flipbook").on("click", resetBook)
+
+    rightArrow.off("click");
+    rightArrow.on("click", resetBook)
 });
 
 
@@ -160,6 +163,9 @@ function resetBook() {
         this.pause();
         this.currentTime = 0;
     });
-    $("#flipbook").turn("page", 1)
-    $("#flipbook").off("click")
+    $("#flipbook").turn("page", 1);
+    $("#flipbook").off("click");
+    rightArrow.on("click", function() { 
+        $("#flipbook").turn("next")
+    })
 }
