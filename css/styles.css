@@ -1,0 +1,83 @@
+#audio-clips {
+    display: hidden;
+}
+
+body {
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-weight: normal;
+    font-size: 48px;
+    padding-bottom: 1rem;
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+.container {
+    padding: 1rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.interface {
+    width: 425px;
+    height: 650px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.arrows {
+    display: flex;
+}
+.arrow {
+    flex: 1;
+    outline: none;
+    border: 2px solid lightgrey;
+    font-weight: bold;
+    font-size: 16px;
+
+    border-radius: 0;
+    padding: 10px 10px 10px 10px;
+    background-color: #F7F5F6; 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#F7F5F6), to(#DDDDDD));
+    background-image: -webkit-linear-gradient(top, #F7F5F6, #DDDDDD);
+    background-image: -moz-linear-gradient(top, #F7F5F6, #DDDDDD);
+    background-image: -ms-linear-gradient(top, #F7F5F6, #DDDDDD);
+    background-image: -o-linear-gradient(top, #F7F5F6, #DDDDDD);
+    background-image: linear-gradient(to bottom, #F7F5F6, #DDDDDD);
+}
+
+.arrow:hover {
+    background-color: #E0E0E0; 
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#E0E0E0), to(#BDBBBC));
+    background-image: -webkit-linear-gradient(top, #E0E0E0, #BDBBBC);
+    background-image: -moz-linear-gradient(top, #E0E0E0, #BDBBBC);
+    background-image: -ms-linear-gradient(top, #E0E0E0, #BDBBBC);
+    background-image: -o-linear-gradient(top, #E0E0E0, #BDBBBC);
+    background-image: linear-gradient(to bottom, #E0E0E0, #BDBBBC);
+}
+
+.arrow:first-of-type {
+    border-right: none;
+}
+
+@media(max-width: 500px) {
+    .interface {
+        width: 325px;
+        height: 500px;
+    } 
+    h1 {
+        font-size: 32px;
+    }
+}
